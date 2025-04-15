@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10 Jenis Font Populer</title>
+  <link rel="icon" href="img/logo.svg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Oswald&family=Raleway&family=Poppins&family=Playfair+Display&family=Merriweather&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;700&family=Wix+Madefor+Text:wght@800&display=swap" rel="stylesheet" />
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="asmaaaaaaa.css" />
+
+  <style>
+    :root {
+      --soft-pink: #817579;
+      --light-pink: #99838b;
+      --accent-pink: #ac1051;
+      --text-dark: #4a4a4a;
+      --card-bg: #fff0f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #aa8091, #dfc5ce);
+      color: var(--text-dark);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin: 60px 20px 30px;
+      color: var(--accent-pink);
+    }
+
+    .font-section {
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: var(--accent-pink);
+    }
+
+    .font-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .font-box {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .font-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .font-box span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      color: var(--accent-pink);
+      margin: 12px 0 6px;
+    }
+
+    .font-box p {
+  font-size: 14px;
+  color: #333;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+  overflow: hidden;
+}
+
+.font-box {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(0.98);
+}
+
+.font-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.font-box:hover p {
+  opacity: 1;
+  max-height: 100px;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+      color: #fff;
+      font-weight: 200;
+    }
+
+    /* Font classes */
+    .roboto { font-family: 'Roboto', sans-serif; }
+    .open-sans { font-family: 'Open Sans', sans-serif; }
+    .lato { font-family: 'Lato', sans-serif; }
+    .montserrat { font-family: 'Montserrat', sans-serif; }
+    .oswald { font-family: 'Oswald', sans-serif; }
+    .raleway { font-family: 'Raleway', sans-serif; }
+    .poppins { font-family: 'Poppins', sans-serif; }
+    .playfair { font-family: 'Playfair Display', serif; }
+    .merriweather { font-family: 'Merriweather', serif; }
+    .source-sans { font-family: 'Source Sans Pro', sans-serif; }
+
+    @keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.font-box:nth-child(odd) {
+  animation: fadeInLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.font-box:nth-child(even) {
+  animation: fadeInRight 1s ease forwards;
+  opacity: 0;
+}
+
+
+    /* Responsive Breakpoints */
+    @media (max-width: 992px) {
+      .font-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">El-<span>asma</span></a>
+    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+        ← Back
+      </a>
+    </nav>
+  <!-- Navbar end -->
+
+  <!-- Audio button -->
+  <button id="music-button"><span>▶️</span></button>
+  <audio id="audio">
+    <source src="audio/lofi.mp4" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <section class="font-section">
+    <h1 class="heading">10 Jenis Font Populer 🩷</h1>
+    <div class="font-container">
+      <div class="font-box roboto">
+        <span>1. Roboto</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box open-sans">
+        <span>2. Open Sans</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box lato">
+        <span>3. Lato</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box montserrat">
+        <span>4. Montserrat</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box oswald">
+        <span>5. Oswald</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box raleway">
+        <span>6. Raleway</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box poppins">
+        <span>7. Poppins</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box playfair">
+        <span>8. Playfair Display</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box merriweather">
+        <span>9. Merriweather</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+      <div class="font-box source-sans">
+        <span>10. Source Sans Pro</span>
+        <p>Hallo everyone! Selamat datang di web asma.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Made by Asma 🩷🖋️
+  </footer>
+
+  <script>
+  const fontBoxes = document.querySelectorAll('.font-box');
+  fontBoxes.forEach((box, index) => {
+    box.style.animationDelay = `${index * 0.2}s`;
+  });
+
+const audio = document.getElementById("audio");
+    const musicBtn = document.getElementById("music-button");
+    const icon = musicBtn.querySelector("span");
+
+    let isPlaying = false;
+
+    musicBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        icon.textContent = "▶️";
+      } else {
+        audio.play();
+        icon.textContent = "⏸️";
+      }
+      isPlaying = !isPlaying;
+    });
+
+    audio.addEventListener("ended", () => {
+      icon.textContent = "▶️";
+      isPlaying = false;
+    });
+  </script>
+</body>
+</html>

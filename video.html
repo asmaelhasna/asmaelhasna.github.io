@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10 Format Video Populer</title>
+  <link rel="icon" href="img/logo.heic">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;700&family=Wix+Madefor+Text:wght@800&display=swap" rel="stylesheet" />
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="asmaaaaaaa.css" />
+  <style>
+    :root {
+      --gray-pastel: #f5f5f5;
+      --gray-deep: #616161;
+      --text-dark: #424242;
+      --card-bg: #ffffff;
+      --btn-bg: #6C63FF;
+      --btn-hover: #5A50CC;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+      color: var(--text-dark);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin: 60px 20px 30px;
+      color: var(--gray-deep);
+    }
+
+    .video-section {
+      padding: 50px 10%;
+      text-align: center;
+      background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+    }
+
+    .heading {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #424242;
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .video-box {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.2s;
+    }
+
+    .video-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-box video {
+      width: 100%;
+      border-radius: 12px;
+      background-color: #eee;
+    }
+
+    .video-box span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      color: #2e2e2e;
+      margin: 12px 0 6px;
+    }
+
+    .video-box p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background-color: var(--btn-bg);
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      background-color: var(--btn-hover);
+      transform: scale(1.05);
+    }
+
+    .download-btn svg {
+      margin-right: 8px;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 992px) {
+      .video-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .heading {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .video-container {
+        grid-template-columns: 1fr;
+      }
+
+      .heading {
+        font-size: 22px;
+      }
+
+      .video-box {
+        padding: 16px;
+      }
+
+      .video-box span {
+        font-size: 16px;
+      }
+
+      .video-box p {
+        font-size: 13px;
+      }
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.85em;
+        color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">El-<span>asma</span></a>
+    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+        ← Back
+      </a>
+    </nav>
+  <!-- Navbar end -->
+
+  <!-- Audio button -->
+  <button id="music-button"><span>▶️</span></button>
+  <audio id="audio">
+    <source src="audio/lofi.mp4" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+  
+  <section class="video-section">
+    <h1 class="heading">10 Format Video Populer 🎥🩶</h1>
+    <div class="video-container">
+      <!-- Format 1 -->
+      <div class="video-box">
+        <video controls>
+          <source src="video populer/mp4.mp4" type="video/mp4" />
+        </video>
+        <span>1. MP4</span>
+        <p>Format video paling umum dan kompatibel di hampir semua perangkat.</p>
+        <a href="video populer/mp4.mp4" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 2 -->
+      <div class="video-box">
+        <video controls>
+          <source src="audio/MKV.mkv" type="video/mkv" />
+        </video>
+        <span>2. MKV</span>
+        <p>Format fleksibel yang mendukung banyak audio, subtitle, dan video stream.</p>
+        <a href="audio/MKV.mkv" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 3 -->
+      <div class="video-box">
+        <video controls>
+          <source src="video populer/AVI.avi" type="video/avi" />
+        </video>
+        <span>3. AVI</span>
+        <p>Format video yang kompatibel dengan hampir semua perangkat, namun ukuran file besar.</p>
+        <a href="video populer/AVI.avi" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 4 -->
+      <div class="video-box">
+        <video controls>
+          <source src="video populer/flv.flv" type="video/flv" />
+        </video>
+        <span>4. FLV</span>
+        <p>Format video yang dulu sering digunakan untuk streaming di internet.</p>
+        <a href="video populer/flv.flv" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 5 -->
+      <div class="video-box">
+        <video controls>
+          <source src="video populer/MOV.mov" type="video/quicktime" />
+        </video>
+        <span>5. MOV</span>
+        <p>Format video yang dikembangkan oleh Apple, populer di perangkat macOS dan iOS.</p>
+        <a href="video populer/MOV.mov" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 6 -->
+      <div class="video-box">
+        <video controls>
+          <source src="video populer/wmv.wmv" type="video/wmv" />
+        </video>
+        <span>6. WMV</span>
+        <p>Format video dari Microsoft yang lebih sering ditemukan di Windows.</p>
+        <a href="video populer/wmv.wmv" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 7 -->
+      <div class="video-box">
+        <video controls>
+          <source src="gambar populer/webm.webm" type="video/webm" />
+        </video>
+        <span>7. WebM</span>
+        <p>Format video modern dengan ukuran lebih kecil dan kompatibel dengan browser.</p>
+        <a href="gambar populer/webm.webm" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+
+      <!-- Format 8 -->
+<div class="video-box">
+  <video controls>
+    <source src="gambar populer/ogv.ogv" type="video/ogg" />
+  </video>
+  <span>8. OGV</span>
+  <p>Format video OGV adalah bagian dari Ogg multimedia framework yang bersifat open source dan digunakan terutama untuk distribusi video melalui web.</p>
+  <a href="gambar populer/ogv.ogv" class="download-btn" download>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+      <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+    </svg> 
+    Download
+  </a>
+</div>
+
+
+     <!-- Format 9 -->
+<div class="video-box">
+  <video controls>
+    <source src="video populer/videopopuler.3gp" type="video/3gpp" />
+  </video>
+  <span>9. 3GP</span>
+  <p>Format video 3GP digunakan terutama pada perangkat mobile untuk menyimpan video dengan ukuran file yang kecil dan efisien.</p>
+  <a href="video populer/3gp.3gp" class="download-btn" download>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+      <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+    </svg> 
+    Download
+  </a>
+</div>
+
+      <!-- Format 10 -->
+      <div class="video-box">
+        <video controls>
+          <source src="gambar populer/mpeg.mpeg" type="video/mpeg" />
+        </video>
+        <span>10. MPEG</span>
+        <p>Format video kompresi yang dapat menghasilkan ukuran file yang lebih kecil tanpa mengurangi kualitas.</p>
+        <a href="gambar populer/mpeg.mpeg" class="download-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
+          </svg> 
+          Download
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 El-asma. All rights reserved.</p>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

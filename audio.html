@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10 Format Audio Populer</title>
+  <link rel="icon" href="img/logo.heic">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;700&family=Wix+Madefor+Text:wght@800&display=swap" rel="stylesheet" />
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- My style -->
+  <link rel="stylesheet" href="asmaaaaaaa.css" />
+  <style>
+    :root {
+      --gray-pastel: #f5f5f5;
+      --gray-deep: #616161;
+      --text-dark: #424242;
+      --card-bg: #ffffff;
+      --nude-color: #f7e8e1;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--nude-color);
+      color: var(--text-dark);
+      animation: fadeIn 2s ease-out;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin: 60px 20px 30px;
+      color: var(--gray-deep);
+    }
+
+    .audio-section {
+      padding: 50px 10%;
+      text-align: center;
+      background: var(--nude-color);
+    }
+
+    .heading {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #424242;
+    }
+
+    .audio-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      opacity: 0;
+      animation: fadeInGrid 2s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInGrid {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .audio-box {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+      opacity: 0;
+      animation: fadeInBox 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeInBox {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .audio-box:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .audio-box audio {
+      width: 100%;
+      border-radius: 12px;
+      background-color: #eee;
+    }
+
+    .audio-box span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      color: #2e2e2e;
+      margin: 12px 0 6px;
+    }
+
+    .audio-box p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      background-color: #e0cfc4;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-link:hover {
+      background-color: #d6baab;
+      color: #000;
+    }
+
+    @media (max-width: 992px) {
+      .audio-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .heading {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .audio-container {
+        grid-template-columns: 1fr;
+      }
+
+      .heading {
+        font-size: 22px;
+      }
+
+      .audio-box {
+        padding: 16px;
+      }
+
+      .audio-box span {
+        font-size: 16px;
+      }
+
+      .audio-box p {
+        font-size: 13px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">El-<span>asma</span></a>
+    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+        ← Back
+    </a>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Audio button -->
+  <button id="music-button"><span>▶️</span></button>
+  <audio id="audio">
+    <source src="audio/lofi.mp4" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <section class="audio-section">
+    <h1 class="heading">10 Format Audio Populer 🎧💜</h1>
+    <div class="audio-container">
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/dark-guitar-130435.mp3" type="audio/mp3" />
+        </audio>
+        <span>1. MP3</span>
+        <p>Format audio yang paling populer dan kompatibel di hampir semua perangkat.</p>
+        <a href="audio populer/dark-guitar-130435.mp3" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/backwards-morphing-tesseract-30sec-challenge-7430.wav" type="audio/mp3" />
+        </audio>
+        <span>2. WAV</span>
+        <p>Format audio tanpa kompresi, kualitas tinggi namun ukuran file besar.</p>
+        <a href="audio populer/backwards-morphing-tesseract-30sec-challenge-7430.wav" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/bouncing-joy-126495.flac" type="audio/mp3" />
+        </audio>
+        <span>3. FLAC</span>
+        <p>Format audio lossless, memberikan kualitas suara yang sangat tinggi.</p>
+        <a href="audio populer/bouncing-joy-126495.flac" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/emotional-orchestra-short-145091.aac" type="audio/mp3" />
+        </audio>
+        <span>4. AAC</span>
+        <p>Format audio dengan kompresi yang lebih efisien daripada MP3.</p>
+        <a href="audio populer/emotional-orchestra-short-145091.aac" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/jungle-vibes-153242.ogg" type="audio/mp3" />
+        </audio>
+        <span>5. OGG</span>
+        <p>Format audio open-source yang biasa digunakan di berbagai aplikasi.</p>
+        <a href="audio populer/jungle-vibes-153242.ogg" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" type="audio/mp3" />
+        </audio>
+        <span>6. WMA</span>
+        <p>Format audio yang dikembangkan oleh Microsoft, digunakan dalam Windows Media Player.</p>
+        <a href="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/techno-trance-267681.m4a" type="audio/mp3" />
+        </audio>
+        <span>7. M4A</span>
+        <p>Format audio berbasis AAC yang digunakan oleh Apple dalam perangkat mereka.</p>
+        <a href="audio populer/techno-trance-267681.m4a" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/sci-fi-mystery-153789.aiff" type="audio/mp3" />
+        </audio>
+        <span>8. AIFF</span>
+        <p>Format audio yang digunakan untuk kualitas suara tertinggi, seperti WAV.</p>
+        <a href="audio populer/sci-fi-mystery-153789.aiff" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" type="audio/mp3" />
+        </audio>
+        <span>9. ALAC</span>
+        <p>Format lossless audio yang dikembangkan oleh Apple untuk kualitas tinggi.</p>
+        <a href="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" download class="download-link">⬇ Download</a>
+      </div>
+
+      <div class="audio-box">
+        <audio controls>
+          <source src="audio populer/vintage-transport-4-loop-2-253563.opus" type="audio/mp3" />
+        </audio>
+        <span>10. Opus</span>
+        <p>Format audio yang cocok untuk aplikasi streaming dan komunikasi suara.</p>
+        <a href="audio populer/vintage-transport-4-loop-2-253563.opus" download class="download-link">⬇ Download</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    Made by Asma 💜🎧
+  </footer>
+
+  <!-- Music Button Logic -->
+  <script>
+    const audio = document.getElementById("audio");
+    const musicBtn = document.getElementById("music-button");
+    const icon = musicBtn.querySelector("span");
+
+    let isPlaying = false;
+
+    musicBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        icon.textContent = "▶️";
+      } else {
+        audio.play();
+        icon.textContent = "⏸️";
+      }
+      isPlaying = !isPlaying;
+    });
+
+    audio.addEventListener("ended", () => {
+      icon.textContent = "▶️";
+      isPlaying = false;
+    });
+  </script>
+</body>
+</html>

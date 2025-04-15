@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10 Format Gambar Populer</title>
+  <link rel="icon" href="img/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;700&family=Wix+Madefor+Text:wght@800&display=swap" rel="stylesheet" />
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- My style -->
+  <link rel="stylesheet" href="asmaaaaaaa.css" />
+  <style>
+    :root {
+      --green-pastel: #d5e8d4;
+      --green-deep: #4caf50;
+      --text-dark: #2e3c2f;
+      --card-bg: #ffffff;
+    }
+  
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #d5e8d4, #b2dfdb);
+      color: var(--text-dark);
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin: 60px 20px 30px;
+      color: var(--green-deep);
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(76, 175, 80, 0.15);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 0.6s ease forwards;
+    }
+  
+    .card:nth-child(even) {
+      animation-delay: 0.2s;
+    }
+    .card:nth-child(odd) {
+      animation-delay: 0.1s;
+    }
+  
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+  
+    .card-content {
+      padding: 16px 20px;
+    }
+  
+    .card-title {
+      font-weight: 600;
+      color: var(--green-deep);
+      font-size: 1.2em;
+      margin-bottom: 6px;
+    }
+  
+    .card-desc {
+      font-weight: 300;
+      color: #3d3d3d;
+      font-size: 0.95em;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #555;
+    }
+  
+    /* Efek hover pada card */
+    .card:hover {
+      transform: translateY(-10px) scale(1.05); /* Maju sedikit dan sedikit membesar */
+      box-shadow: 0 12px 20px rgba(76, 175, 80, 0.3); /* Bayangan lebih besar */
+    }
+  
+    /* Efek gambar pada hover */
+    .card:hover img {
+      transform: translateY(-10px); /* Gambar bergerak sedikit ke atas */
+    }
+  
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>  
+</head>
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">El-<span>asma</span></a>
+    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+        ← Back
+      </a>
+    </nav>
+  <!-- Navbar end -->
+
+  <button id="music-button"><span>▶️</span></button>
+  <audio id="audio">
+    <source src="audio/lofi.mp4" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+  <h1>10 Format Gambar Populer 🖼️🌿</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <a href="gambar populer/1.jpg" download>
+        <img src="gambar populer/1.jpg" alt="JPG">
+      </a>
+      <div class="card-content">
+        <div class="card-title">1. JPG </div>
+        <div class="card-desc">Format gambar kompresi tinggi, cocok untuk foto digital.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/2.png" download>
+        <img src="gambar populer/2.png" alt="PNG">
+      </a>
+      <div class="card-content">
+        <div class="card-title">2. PNG</div>
+        <div class="card-desc">Format gambar tanpa latar belakang dan kualitas tinggi.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/3.gif" download>
+        <img src="gambar populer/3.gif">
+      </a>
+      <div class="card-content">
+        <div class="card-title">3. GIF</div>
+        <div class="card-desc">Format animasi gambar yang mendukung transparansi.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/10.jpeg" download>
+        <img src="gambar populer/10.jpeg">
+      </a>
+      <div class="card-content">
+        <div class="card-title">4. JPEG</div>
+        <div class="card-desc">Format gambar kompresi tinggi, cocok untuk foto digital</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/5.svg" download>
+        <img src="gambar populer/5.svg" alt="SVG">
+      </a>
+      <div class="card-content">
+        <div class="card-title">5. SVG</div>
+        <div class="card-desc">Format gambar vektor berbasis XML, cocok untuk web.</div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <a href="gambar populer/6.webp" download>
+        <img src="gambar populer/6.webp">
+      </a>
+      <div class="card-content">
+        <div class="card-title">6. WebP</div>
+        <div class="card-desc">Format modern dengan ukuran kecil dan kualitas tinggi.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/9.avif" download>
+        <img src="gambar populer/9.avif">
+      </a>
+      <div class="card-content">
+        <div class="card-title">7. AVIF</div>
+        <div class="card-desc">Format gambar modern dengan kompresi efisien dan kualitas tinggi, ideal untuk web.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/4.heif" download>
+        <img src="gambar populer/4.heif">
+      </a>
+      <div class="card-content">
+        <div class="card-title">8. HEIF</div>
+        <div class="card-desc">Format efisien dengan kualitas tinggi, ideal untuk perangkat modern dan hemat ruang penyimpanan.</div>
+      </div>
+    </div>    
+
+    <div class="card">
+      <a href="gambar populer/7.jp2" download>
+        <img src="gambar populer/7.jp2">
+      </a>
+      <div class="card-content">
+        <div class="card-title">9. JP2</div>
+        <div class="card-desc">Format gambar JPEG 2000 dengan kompresi efisien dan kualitas tinggi, mendukung transparansi.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="gambar populer/8.heic" download>
+        <img src="gambar populer/8.heic">
+      </a>
+      <div class="card-content">
+        <div class="card-title">10. HEIC</div>
+        <div class="card-desc">Format dari Apple dengan efisiensi kompresi tinggi.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Made by Asma 🍃
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    const musicBtn = document.getElementById("music-button");
+    const icon = musicBtn.querySelector("span");
+
+    let isPlaying = false;
+
+    musicBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        icon.textContent = "▶️";
+      } else {
+        audio.play();
+        icon.textContent = "⏸️";
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // Kalau lagu selesai, tombol balik ke play
+    audio.addEventListener("ended", () => {
+      icon.textContent = "▶️";
+      isPlaying = false;
+    });
+  </script>
+</body>
+</html>

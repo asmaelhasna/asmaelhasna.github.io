@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10 Jenis Animasi Populer</title>
+  <link rel="icon" href="img/logo.heic">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;700&family=Wix+Madefor+Text:wght@800&display=swap" rel="stylesheet" />
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- My style -->
+  <link rel="stylesheet" href="asmaaaaaaa.css" />
+
+  <style>
+    :root {
+      --bg-light: #fff0f6;
+      --accent-pink: #ac1051;
+      --card-bg: #ffffff;
+      --text-dark: #4a4a4a;
+    }
+
+    /* Zoom-In Animation */
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Slide-In Animation */
+    @keyframes slideIn {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Bounce Animation */
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Body styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fff0f6, #f8bbd0);
+      color: var(--text-dark);
+      animation: zoomIn 1s ease-out; /* Apply zoom-in */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.7em;
+      margin-top: 70px;
+      color: var(--accent-pink);
+      font-family: 'Wix Madefor Text', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      animation: slideIn 1.5s ease-out; /* Apply slide-in */
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards 0.5s;
+    }
+
+    /* Fade-In Animation for Content */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(236, 64, 122, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk zoom */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efek zoom in saat hover */
+  box-shadow: 0 10px 20px rgba(236, 64, 122, 0.25);
+}
+
+
+    .card video {
+      width: 100%;
+      height: auto;
+      display: block;
+      background-color: #fce4ec;
+    }
+
+    .card-content {
+      padding: 16px 20px;
+    }
+
+    .card-title {
+      font-family: 'Wix Madefor Text', sans-serif;
+      font-size: 1.25em;
+      color: var(--accent-pink);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 1em;
+      font-weight: 600;
+      color: #686667;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+      font-weight: 200;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        padding: 20px 10px;
+      }
+
+      .card {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">El-<span>asma</span></a>
+    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+        ← Back
+      </a>
+    </nav>
+  <!-- Navbar end -->
+
+  <button id="music-button"><span>▶️</span></button>
+  <audio id="audio">
+    <source src="audio/lofi.mp4" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <h1>10 Jenis Animasi Populer 🎞️💗</h1>
+
+  <div class="container">
+    <div class="card">
+      <video controls poster="">
+        <source src="animasi populer/Cutout Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">1. Cutout Animation</div>
+        <div class="card-desc">Animasi menggunakan potongan gambar seperti kertas atau foto yang digerakkan.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/3D Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">2. 3D Animation</div>
+        <div class="card-desc">Animasi tiga dimensi dengan efek realistis dan kedalaman ruang.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/2D Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">3. 2D Animation</div>
+        <div class="card-desc">Animasi dua dimensi klasik seperti kartun tradisional.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/Stop Motion Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">4. Stop Motion</div>
+        <div class="card-desc">Menggabungkan foto satu per satu objek nyata untuk membuat animasi.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/CGI Animation.mp4" type="video/ogg">
+      </video>
+      <div class="card-content">
+        <div class="card-title">5. CGI Animation</div>
+        <div class="card-desc">Computer-Generated Imagery yang biasa digunakan dalam film-film besar.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/Motion Graphics Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">6. Motion Graphics</div>
+        <div class="card-desc">Animasi grafis bergerak, sering digunakan di iklan dan presentasi.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/Flat Design Animation.webm" type="video/webm">
+      </video>
+      <div class="card-content">
+        <div class="card-title">7. Flat Design</div>
+        <div class="card-desc">Gaya minimalis dua dimensi yang clean dan modern.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/Hybrid Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">8. Hybrid Animation</div>
+        <div class="card-desc">Kombinasi dari berbagai teknik animasi (2D, 3D, live-action).</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/Claymation Animation .mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">9. Claymation</div>
+        <div class="card-desc">Stop motion menggunakan bahan tanah liat yang dibentuk manual.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="animasi populer/Typography Animation.mp4" type="video/mp4">
+      </video>
+      <div class="card-content">
+        <div class="card-title">10. Typography Animation</div>
+        <div class="card-desc">Animasi huruf dan teks yang menarik secara visual.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Made by Asma 💕
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    const musicBtn = document.getElementById("music-button");
+    const icon = musicBtn.querySelector("span");
+
+    let isPlaying = false;
+
+    musicBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        icon.textContent = "▶️";
+      } else {
+        audio.play();
+        icon.textContent = "⏸️";
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // Kalau lagu selesai, tombol balik ke play
+    audio.addEventListener("ended", () => {
+      icon.textContent = "▶️";
+      isPlaying = false;
+    });
+  </script>
+</body>
+</html>
