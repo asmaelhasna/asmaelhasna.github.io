@@ -87,10 +87,13 @@
   font-size: 14px;
   color: #333;
   opacity: 0;
-  max-height: 0;
-  transition: opacity 0.4s ease, max-height 0.4s ease;
+  height: 0;
   overflow: hidden;
+  transition: all 0.4s ease;
+  margin-top: 0;
 }
+
+
 
 .font-box {
   background: var(--card-bg);
@@ -109,8 +112,11 @@
 
 .font-box:hover p {
   opacity: 1;
-  max-height: 100px;
+  height: auto;
+  margin-top: 12px;
+  overflow: visible;
 }
+
 
 
     footer {
@@ -179,7 +185,7 @@
   <!-- Navbar start -->
   <nav class="navbar">
     <a href="#" class="navbar-logo">El-<span>asma</span></a>
-    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+    <a href="index.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
         ← Back
       </a>
     </nav>
@@ -197,43 +203,106 @@
     <div class="font-container">
       <div class="font-box roboto">
         <span>1. Roboto</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Roboto adalah font sans-serif modern yang dirancang oleh Google dan menjadi
+          font default pada sistem Android. Font ini memiliki bentuk geometris dengan
+          lengkungan halus, sehingga terlihat bersih namun tetap humanis. Roboto
+          mendukung berbagai ukuran dan bobot huruf, menjadikannya sangat fleksibel
+          untuk berbagai kebutuhan desain. Font ini banyak digunakan dalam aplikasi
+          mobile, situs web, hingga dokumen profesional. Tampilannya yang netral namun
+          elegan menjadikannya favorit para desainer UI/UX.</p>
       </div>
       <div class="font-box open-sans">
         <span>2. Open Sans</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Open Sans adalah font sans-serif yang dikembangkan oleh Steve Matteson dan
+          dikenal karena tampilannya yang simpel dan mudah dibaca. Font ini dirancang
+          dengan jarak antar huruf yang longgar dan bentuk huruf terbuka, sehingga sangat
+          nyaman dibaca pada layar digital. Banyak digunakan dalam website, presentasi,
+          dan dokumen digital karena kesan profesional dan ramah yang dimilikinya. Open
+          Sans juga kompatibel dengan berbagai sistem operasi dan mendukung berbagai
+          8 bahasa. Oleh karena itu, font ini menjadi salah satu font Google yang paling
+          populer.
+          </p>
       </div>
       <div class="font-box lato">
         <span>3. Lato</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Lato merupakan font sans-serif yang didesain oleh Łukasz Dziedzic dan memiliki
+          keseimbangan antara struktur profesional dan kelembutan bentuk. Desainnya yang
+          bersih dan modern menjadikannya cocok digunakan pada berbagai jenis desain
+          digital maupun cetak. Lato tersedia dalam berbagai varian bobot, sehingga sangat
+          fleksibel untuk judul maupun teks isi. Font ini populer di kalangan perusahaan
+          teknologi dan startup karena kesan elegan dan dinamis yang diberikannya.
+          Kejelasan visualnya tetap terjaga bahkan dalam ukuran kecil.</p>
       </div>
       <div class="font-box montserrat">
         <span>4. Montserrat</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Font Montserrat terinspirasi dari tipografi khas kota Buenos Aires dan diciptakan
+          oleh Julieta Ulanovsky. Font ini memiliki bentuk geometris yang tegas dan
+          elegan, sangat cocok untuk branding, heading, dan tampilan modern. Montserrat
+          banyak digunakan dalam desain web karena tampilan tebal dan mudah dibaca.
+          Font ini memberikan kesan profesional dan kontemporer, sehingga ideal untuk
+          perusahaan teknologi dan kreatif. Dukungan lengkap terhadap berbagai berat
+          huruf membuatnya fleksibel dalam berbagai proyek.</p>
       </div>
       <div class="font-box oswald">
         <span>5. Oswald</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Oswald adalah adaptasi dari font klasik “Alternate Gothic” yang diperbarui agar
+          cocok dengan layar digital masa kini. Font ini tampil padat dengan bentuk sempit
+          dan tinggi, menjadikannya cocok untuk penggunaan pada judul, banner, dan
+          desain vertikal. Oswald memberikan kesan tegas, maskulin, dan profesional,
+          namun tetap terlihat modern. Desainnya yang ramping membantu menghemat
+          ruang tanpa mengorbankan keterbacaan. Karena itu, Oswald sangat populer di
+          kalangan desainer editorial dan website berita.</p>
       </div>
       <div class="font-box raleway">
         <span>6. Raleway</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Raleway adalah font sans-serif bergaya elegan yang dirancang untuk digunakan
+          dalam judul dan tampilan mewah. Font ini memiliki garis tipis dan proporsi tinggi
+          yang membuatnya tampak ringan dan anggun. Cocok digunakan dalam desain
+          undangan, majalah mode, atau situs portofolio. Raleway menonjol karena bentuk
+          hurufnya yang unik dan modern. Desainnya memberikan kesan eksklusif dan
+          estetik, menjadikannya pilihan utama untuk tampilan premium.</p>
       </div>
       <div class="font-box poppins">
         <span>7. Poppins</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Poppins adalah font geometris modern yang memiliki bentuk huruf bundar dan
+          konsisten. Font ini sangat populer dalam desain UI dan branding karena
+          11
+          tampilannya yang bersih dan mudah dibaca. Poppins tersedia dalam berbagai
+          bobot dan sangat responsif di layar digital. Desain minimalisnya memberikan
+          nuansa profesional dan segar, cocok untuk startup, agensi, dan presentasi bisnis.
+          Banyak digunakan pada website modern dengan gaya visual elegan dan futuristik.</p>
       </div>
       <div class="font-box playfair">
         <span>8. Playfair Display</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Playfair Display adalah font serif yang terinspirasi dari tipografi abad ke-18,
+          cocok untuk kesan klasik dan elegan. Font ini banyak digunakan dalam desain
+          editorial, blog, atau majalah yang membutuhkan nuansa formal namun artistik.
+          Karakter hurufnya tebal dan kontras, ideal untuk judul dan kutipan. Playfair juga
+          cocok dikombinasikan dengan font sans-serif modern untuk hasil yang seimbang.
+          Keanggunannya menjadikan font ini sering muncul dalam desain fashion dan
+          luxury brand.
+          </p>
       </div>
       <div class="font-box merriweather">
         <span>9. Merriweather</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Merriweather adalah font serif yang dirancang untuk kenyamanan membaca teks
+          panjang di layar digital. Dengan huruf yang sedikit sempit dan tinggi, font ini
+          efisien digunakan dalam paragraf panjang tanpa mengurangi estetika.
+          Merriweather memiliki kesan formal dan klasik, cocok untuk artikel, e-book, dan
+          presentasi akademik. Tersedia dalam varian serif dan sans-serif untuk fleksibilitas
+          desain. Keseimbangan visual dan keterbacaan menjadikannya pilihan utama untuk
+          konten informatif.
+          </p>
       </div>
       <div class="font-box source-sans">
         <span>10. Source Sans Pro</span>
-        <p>Hallo everyone! Selamat datang di web asma.</p>
+        <p>Source Sans Pro adalah font sans-serif pertama yang dirilis oleh Adobe, dirancang
+          khusus untuk antarmuka pengguna. Font ini menampilkan proporsi huruf yang
+          seimbang dan mudah dibaca dalam berbagai ukuran. Cocok digunakan dalam
+          aplikasi, website, dan sistem navigasi digital. Source Sans Pro juga mendukung
+          berbagai bahasa dan karakter internasional. Kesederhanaannya membuat font ini
+          banyak digunakan dalam produk Adobe dan komunitas open-source.
+          </p>
       </div>
     </div>
   </section>

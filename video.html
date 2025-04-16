@@ -10,9 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;700&family=Wix+Madefor+Text:wght@800&display=swap" rel="stylesheet" />
   
-  <!-- Feather Icons -->
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="asmaaaaaaa.css" />
   <style>
     :root {
       --gray-pastel: #f5f5f5;
@@ -81,6 +78,7 @@
       opacity: 0;
       animation: fadeIn 1s forwards;
       animation-delay: 0.2s;
+      position: relative;
     }
 
     .video-box:hover {
@@ -105,6 +103,14 @@
     .video-box p {
       font-size: 14px;
       color: #666;
+      display: none; /* Hide description initially */
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .video-box:hover p {
+      display: block;
+      opacity: 1;
     }
 
     .download-btn {
@@ -177,30 +183,31 @@
   <!-- Navbar start -->
   <nav class="navbar">
     <a href="#" class="navbar-logo">El-<span>asma</span></a>
-    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+    <a href="index.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
         ← Back
-      </a>
-    </nav>
+    </a>
+  </nav>
   <!-- Navbar end -->
 
-  <!-- Audio button -->
-  <button id="music-button"><span>▶️</span></button>
-  <audio id="audio">
-    <source src="audio/lofi.mp4" type="audio/mpeg">
-    Browser kamu tidak mendukung audio.
-  </audio>
-  
   <section class="video-section">
     <h1 class="heading">10 Format Video Populer 🎥🩶</h1>
     <div class="video-container">
       <!-- Format 1 -->
       <div class="video-box">
         <video controls>
-          <source src="video populer/mp4.mp4" type="video/mp4" />
+          <source src="video populer 2/mp4.mp4" type="video/mp4" />
         </video>
         <span>1. MP4</span>
-        <p>Format video paling umum dan kompatibel di hampir semua perangkat.</p>
-        <a href="video populer/mp4.mp4" class="download-btn" download>
+        <p>MP4 adalah format video yang paling populer karena kompatibel dengan hampir
+          semua perangkat dan platform. Format ini mendukung berbagai elemen
+          multimedia seperti video, audio, teks, dan gambar, menjadikannya sangat
+          fleksibel. MP4 menggunakan kompresi MPEG-4 atau H.264 yang efisien,
+          menghasilkan ukuran file kecil tanpa mengorbankan kualitas. Karena kestabilan
+          dan efisiensinya, MP4 banyak digunakan untuk streaming, media sosial, dan
+          penyimpanan video pribadi. Format ini juga mendukung pemutaran di browser
+          HTML5, menjadikannya ideal untuk distribusi digital.
+          </p>
+        <a href="video populer 2/mp4.mp4" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
           </svg> 
@@ -211,25 +218,36 @@
       <!-- Format 2 -->
       <div class="video-box">
         <video controls>
-          <source src="audio/MKV.mkv" type="video/mkv" />
+          <source src="video populer 2/MKV.mkv" type="video/mkv" />
         </video>
         <span>2. MKV</span>
-        <p>Format fleksibel yang mendukung banyak audio, subtitle, dan video stream.</p>
-        <a href="audio/MKV.mkv" class="download-btn" download>
+        <p>MKV adalah format video open-source yang sangat fleksibel dan mendukung
+          penyimpanan banyak trek video, audio, subtitle, dan metadata dalam satu file.
+          Format ini sangat cocok untuk film atau video dengan banyak bahasa dan subtitle.
+          Meskipun tidak sekompatibel MP4 pada semua perangkat, MKV populer di
+          kalangan pengguna lanjutan dan pembuat konten. MKV mendukung kompresi
+          berkualitas tinggi seperti H.264 dan H.265, serta mendukung video resolusi tinggi.
+          Format ini sering digunakan untuk backup DVD atau distribusi film digital.</p>
+        <a href="video populer 2/MKV.mkv" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
           </svg> 
           Download
         </a>
       </div>
-
+      
       <!-- Format 3 -->
       <div class="video-box">
         <video controls>
-          <source src="video populer/AVI.avi" type="video/avi" />
+          <source src="video populer/AVI.avi" type="video/webm" />
         </video>
         <span>3. AVI</span>
-        <p>Format video yang kompatibel dengan hampir semua perangkat, namun ukuran file besar.</p>
+        <p>AVI adalah format video yang dikembangkan oleh Microsoft dan merupakan salah satu format tertua yang masih 
+          digunakan. Format ini menawarkan kualitas video yang tinggi karena mendukung penyimpanan data tanpa kompresi.
+           Namun, ukuran file AVI cenderung sangat besar, sehingga kurang cocok untuk streaming atau perangkat dengan 
+           ruang penyimpanan terbatas. AVI mendukung berbagai codec, tetapi ketergantungannya pada codec pihak ketiga 
+           membuat kompatibilitasnya bervariasi. Format ini masih digunakan dalam produksi video yang mengutamakan 
+           kualitas dibanding efisiensi penyimpanan.</p>
         <a href="video populer/AVI.avi" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
@@ -244,7 +262,14 @@
           <source src="video populer/flv.flv" type="video/flv" />
         </video>
         <span>4. FLV</span>
-        <p>Format video yang dulu sering digunakan untuk streaming di internet.</p>
+        <p>FLV adalah format video yang dulu sangat populer digunakan untuk pemutaran
+          video di internet, terutama dengan Adobe Flash Player. FLV mampu
+          menampilkan video berkualitas dengan ukuran file yang relatif kecil. Namun,
+          dengan semakin ditinggalkannya Flash oleh banyak platform, penggunaan FLV
+          kini menurun drastis. Meskipun begitu, format ini masih digunakan dalam
+          beberapa sistem lama atau arsip video lama. FLV mendukung streaming progresif,
+          menjadikannya populer sebelum era HTML5.
+          </p>
         <a href="video populer/flv.flv" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
@@ -256,11 +281,18 @@
       <!-- Format 5 -->
       <div class="video-box">
         <video controls>
-          <source src="video populer/MOV.mov" type="video/quicktime" />
+          <source src="video populer 2/MOV.mov" type="video/quicktime" />
         </video>
         <span>5. MOV</span>
-        <p>Format video yang dikembangkan oleh Apple, populer di perangkat macOS dan iOS.</p>
-        <a href="video populer/MOV.mov" class="download-btn" download>
+        <p>MOV adalah format video yang dikembangkan oleh Apple dan biasa digunakan
+          dalam software seperti QuickTime dan iMovie. Format ini mendukung
+          penyimpanan trek video, audio, teks, dan efek dalam satu file. MOV memberikan
+          kualitas video yang sangat tinggi, terutama untuk perangkat Apple. Format ini
+          sering digunakan dalam editing video profesional karena fleksibilitas dan
+          kualitasnya. Namun, MOV memiliki ukuran file yang relatif besar, dan terkadang
+          kurang kompatibel di luar ekosistem Apple.
+          </p>
+        <a href="video populer 2/MOV.mov" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
           </svg> 
@@ -274,7 +306,14 @@
           <source src="video populer/wmv.wmv" type="video/wmv" />
         </video>
         <span>6. WMV</span>
-        <p>Format video dari Microsoft yang lebih sering ditemukan di Windows.</p>
+        <p>WMV adalah format video yang dikembangkan oleh Microsoft dan dioptimalkan
+          untuk sistem operasi Windows. Format ini menawarkan kompresi yang cukup
+          efisien dengan kualitas video yang tetap baik, menjadikannya cocok untuk
+          penggunaan di email dan streaming. WMV sering digunakan untuk distribusi
+          video dalam presentasi bisnis atau pendidikan karena file-nya ringan. Meskipun
+          kompatibilitasnya terbatas di luar Windows, banyak pemutar video modern sudah
+          mendukung format ini. WMV juga dapat dienkripsi untuk keamanan distribusi
+          konten.</p>
         <a href="video populer/wmv.wmv" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
@@ -286,11 +325,18 @@
       <!-- Format 7 -->
       <div class="video-box">
         <video controls>
-          <source src="gambar populer/webm.webm" type="video/webm" />
+          <source src="video populer 2/mp4.webm" type="video/webm" />
         </video>
         <span>7. WebM</span>
-        <p>Format video modern dengan ukuran lebih kecil dan kompatibel dengan browser.</p>
-        <a href="gambar populer/webm.webm" class="download-btn" download>
+        <p>WEBM adalah format video open-source yang dirancang untuk web dan didukung
+          secara native oleh HTML5. Format ini menggunakan codec VP8/VP9 dan audio
+          Vorbis/Opus untuk efisiensi kompresi. WEBM banyak digunakan di YouTube dan
+          32
+          platform streaming lainnya karena memberikan kualitas video tinggi dengan
+          ukuran file yang kecil. WEBM sangat ideal untuk integrasi di halaman web tanpa
+          memerlukan plugin tambahan. Format ini mendukung pemutaran cepat dan ringan
+          di berbagai browser modern.</p>
+        <a href="video populer 2/mp4.webm" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
           </svg> 
@@ -304,7 +350,13 @@
     <source src="gambar populer/ogv.ogv" type="video/ogg" />
   </video>
   <span>8. OGV</span>
-  <p>Format video OGV adalah bagian dari Ogg multimedia framework yang bersifat open source dan digunakan terutama untuk distribusi video melalui web.</p>
+  <p>OGV adalah format video berbasis Ogg yang bersifat open-source dan
+    mendukung pemutaran langsung di browser HTML5. Format ini menggunakan
+    codec Theora dan dirancang untuk penggunaan di web tanpa lisensi komersial.
+    OGV memberikan kualitas video yang layak untuk distribusi konten edukatif atau
+    demonstrasi teknis. Format ini sering digunakan dalam proyek open-source dan
+    sistem pembelajaran daring. Meskipun tidak sepopuler MP4, OGV tetap relevan
+    untuk kebutuhan yang menekankan kebebasan lisensi dan keterbukaan teknologi.</p>
   <a href="gambar populer/ogv.ogv" class="download-btn" download>
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
       <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
@@ -317,10 +369,16 @@
      <!-- Format 9 -->
 <div class="video-box">
   <video controls>
-    <source src="video populer/videopopuler.3gp" type="video/3gpp" />
+    <source src="video populer/3gp.3gp" type="video/mp4" />
   </video>
   <span>9. 3GP</span>
-  <p>Format video 3GP digunakan terutama pada perangkat mobile untuk menyimpan video dengan ukuran file yang kecil dan efisien.</p>
+  <p>3GP adalah format video ringan yang awalnya dikembangkan untuk ponsel
+    generasi awal (3G). Format ini memungkinkan pemutaran video di perangkat
+    dengan kapasitas rendah dan bandwidth terbatas. 3GP menggunakan kompresi
+    sederhana, menghasilkan ukuran file yang sangat kecil. Meskipun kualitas
+    videonya tidak setinggi format modern, 3GP tetap digunakan dalam sistem lama
+    atau aplikasi ringan. Format ini kompatibel dengan banyak ponsel lawas dan ideal
+    untuk pengiriman video lewat MMS.</p>
   <a href="video populer/3gp.3gp" class="download-btn" download>
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
       <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>
@@ -335,7 +393,14 @@
           <source src="gambar populer/mpeg.mpeg" type="video/mpeg" />
         </video>
         <span>10. MPEG</span>
-        <p>Format video kompresi yang dapat menghasilkan ukuran file yang lebih kecil tanpa mengurangi kualitas.</p>
+        <p>MPEG adalah format video standar lama yang digunakan untuk distribusi video
+          digital seperti VCD dan DVD. Format ini mencakup beberapa versi seperti
+          MPEG-1, MPEG-2, dan MPEG-4 dengan kemampuan kompresi berbeda. MPEG2 banyak digunakan dalam siaran TV digital dan DVD, sedangkan MPEG-4 lebih
+          umum di perangkat modern. Format ini menawarkan keseimbangan antara
+          kualitas dan ukuran file, menjadikannya tetap relevan hingga kini. Meskipun telah
+          banyak digantikan oleh format seperti MP4, MPEG masih digunakan dalam
+          konteks tertentu.
+          </p>
         <a href="gambar populer/mpeg.mpeg" class="download-btn" download>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
             <path d="M.5 0a.5.5 0 0 1 .5.5V9.707l5.646-5.647a.5.5 0 1 1 .708.708L1.707 9.707 7.854 15.854a.5.5 0 0 1-.708.708L.5 10.707V15a.5.5 0 0 1-.5.5h13a.5.5 0 0 1 .5-.5V9.707l-5.646 5.647a.5.5 0 1 1-.708-.708L14.293 9.707 8.146 3.854a.5.5 0 0 1 .708-.708L15.5 8.293V.5a.5.5 0 0 1-.5-.5H.5z"/>

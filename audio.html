@@ -109,9 +109,19 @@
     }
 
     .audio-box p {
-      font-size: 14px;
-      color: #666;
-    }
+  font-size: 14px;
+  color: #666;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.audio-box:hover p {
+  opacity: 1;
+  max-height: 600px; /* cukup untuk 5 kalimat */
+}
+
 
     .download-link {
       display: inline-block;
@@ -173,7 +183,7 @@
   <!-- Navbar start -->
   <nav class="navbar">
     <a href="#" class="navbar-logo">El-<span>asma</span></a>
-    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+    <a href="index.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
         ← Back
     </a>
   </nav>
@@ -192,38 +202,71 @@
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/dark-guitar-130435.mp3" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.mp3" type="audio/mp3" />
         </audio>
         <span>1. MP3</span>
-        <p>Format audio yang paling populer dan kompatibel di hampir semua perangkat.</p>
-        <a href="audio populer/dark-guitar-130435.mp3" download class="download-link">⬇ Download</a>
+        <p>MP3 adalah format audio yang paling dikenal dan digunakan secara luas di
+          seluruh dunia. Format ini menawarkan kompresi yang efisien sehingga ukuran file
+          audio bisa lebih kecil tanpa mengorbankan kualitas suara secara signifikan. MP3
+          sangat kompatibel dengan hampir semua perangkat dan platform, dari komputer
+          pribadi hingga ponsel dan pemutar media portabel. Karena popularitasnya yang
+          tinggi, banyak layanan streaming dan perangkat keras memilih MP3 sebagai
+          format standar untuk distribusi musik digital. Meskipun kualitasnya tidak setinggi
+          format lossless, MP3 tetap menjadi pilihan utama bagi konsumen yang
+          mengutamakan ukuran file yang lebih kecil.
+          </p>
+        <a href="audio populer/jungle-vibes-153242.mp3" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/backwards-morphing-tesseract-30sec-challenge-7430.wav" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.wav" type="audio/mp3" />
         </audio>
         <span>2. WAV</span>
-        <p>Format audio tanpa kompresi, kualitas tinggi namun ukuran file besar.</p>
-        <a href="audio populer/backwards-morphing-tesseract-30sec-challenge-7430.wav" download class="download-link">⬇ Download</a>
+        <p>WAV adalah format audio uncompressed yang digunakan untuk menyimpan suara
+          dengan kualitas tertinggi. Karena tidak menggunakan kompresi, WAV
+          menghasilkan file yang sangat besar namun memberikan kualitas audio yang
+          sangat baik, menjadikannya pilihan utama dalam rekaman studio dan produksi
+          musik. Format ini sering digunakan di industri profesional untuk memastikan
+          kualitas suara yang tidak terdistorsi. Meskipun ukurannya besar, WAV banyak
+          digunakan dalam situasi di mana kualitas suara adalah prioritas utama. Kelemahan
+          utama dari WAV adalah ukuran file yang besar, yang memerlukan lebih banyak
+          ruang penyimpanan.</p>
+        <a href="audio populer/jungle-vibes-153242.wav" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/bouncing-joy-126495.flac" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.flac" type="audio/mp3" />
         </audio>
         <span>3. FLAC</span>
-        <p>Format audio lossless, memberikan kualitas suara yang sangat tinggi.</p>
-        <a href="audio populer/bouncing-joy-126495.flac" download class="download-link">⬇ Download</a>
+        <p>FLAC adalah format audio lossless yang memberikan kualitas suara yang sangat
+          tinggi tanpa mengurangi data audio. FLAC mengompresi file audio menjadi lebih
+          kecil, namun tetap mempertahankan detail suara secara utuh. Format ini sangat
+          populer di kalangan audiophile dan penggemar musik yang menginginkan kualitas
+          audio maksimal tanpa kehilangan data. Meskipun file FLAC lebih besar
+          dibandingkan MP3, banyak orang lebih memilihnya karena kualitas suara yang
+          jauh lebih baik. FLAC juga mendukung metadata seperti informasi album dan
+          artwork, menjadikannya pilihan yang baik untuk koleksi musik digital.</p>
+        <a href="audio populer/jungle-vibes-153242.flac" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/emotional-orchestra-short-145091.aac" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.aac" type="audio/mp3" />
         </audio>
         <span>4. AAC</span>
-        <p>Format audio dengan kompresi yang lebih efisien daripada MP3.</p>
-        <a href="audio populer/emotional-orchestra-short-145091.aac" download class="download-link">⬇ Download</a>
+        <p>AAC adalah format audio yang lebih efisien daripada MP3, memberikan kualitas
+          suara yang lebih baik pada bit rate yang lebih rendah. Format ini banyak
+          digunakan dalam aplikasi streaming dan perangkat mobile, termasuk iTunes dan
+          24
+          YouTube. Dengan kompresi yang lebih efisien, AAC dapat mengurangi ukuran
+          file sementara tetap mempertahankan kualitas audio yang tinggi. Ini menjadikan
+          AAC pilihan ideal untuk streaming media dan aplikasi berbasis web yang
+          membutuhkan kualitas suara baik dengan ukuran file yang lebih kecil. AAC juga
+          lebih sering digunakan pada perangkat Apple, termasuk iPhone dan iPad, karena
+          kompatibilitasnya dengan perangkat tersebut.</p>
+        <a href="audio populer/jungle-vibes-153242.aac" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
@@ -231,53 +274,99 @@
           <source src="audio populer/jungle-vibes-153242.ogg" type="audio/mp3" />
         </audio>
         <span>5. OGG</span>
-        <p>Format audio open-source yang biasa digunakan di berbagai aplikasi.</p>
+        <p>OGG adalah format audio open-source yang sering digunakan di berbagai aplikasi
+          berbasis web. Dibandingkan dengan MP3, OGG menawarkan kualitas suara yang
+          lebih baik pada bit rate yang lebih rendah, menjadikannya pilihan populer dalam
+          distribusi musik digital dan aplikasi streaming. Sebagai format open-source, OGG
+          bebas royalti dan lebih murah dibandingkan format lain seperti MP3 dan AAC,
+          yang memiliki biaya lisensi. Banyak pengembang perangkat lunak dan situs web
+          yang memilih OGG untuk pengolahan audio karena fleksibilitas dan biaya rendah.
+          Format ini juga mendukung streaming yang efisien, memungkinkan pengguna
+          untuk mendengarkan audio dengan latensi rendah.</p>
         <a href="audio populer/jungle-vibes-153242.ogg" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.wma" type="audio/mp3" />
         </audio>
         <span>6. WMA</span>
-        <p>Format audio yang dikembangkan oleh Microsoft, digunakan dalam Windows Media Player.</p>
-        <a href="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" download class="download-link">⬇ Download</a>
+        <p>WMA adalah format audio yang dikembangkan oleh Microsoft dan digunakan
+          secara luas dalam aplikasi dan perangkat berbasis Windows. WMA menawarkan
+          kompresi yang efisien dan kualitas suara yang baik, tetapi lebih banyak digunakan
+          di lingkungan Windows dibandingkan di platform lainnya. Format ini sering
+          digunakan di Windows Media Player dan aplikasi terkait untuk manajemen dan
+          25
+          pemutaran file audio. WMA dapat menghasilkan file dengan ukuran lebih kecil
+          dibandingkan format lossless seperti WAV atau FLAC, tetapi tetap menjaga
+          kualitas suara yang cukup baik. WMA juga mendukung streaming audio dan
+          video di platform Windows.</p>
+        <a href="audio populer/jungle-vibes-153242.wma" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/techno-trance-267681.m4a" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.m4a" type="audio/mp3" />
         </audio>
         <span>7. M4A</span>
-        <p>Format audio berbasis AAC yang digunakan oleh Apple dalam perangkat mereka.</p>
-        <a href="audio populer/techno-trance-267681.m4a" download class="download-link">⬇ Download</a>
+        <p>M4A adalah format audio yang berbasis AAC dan sering digunakan oleh
+          perangkat Apple, termasuk iPod, iPhone, dan iTunes. Format ini menawarkan
+          kualitas suara yang baik dengan ukuran file yang lebih kecil, menjadikannya
+          pilihan ideal untuk perangkat mobile. M4A mendukung fitur tambahan seperti
+          metadata, yang memungkinkan penyertaan informasi album dan gambar sampul.
+          Format ini juga kompatibel dengan sebagian besar aplikasi perangkat Apple,
+          memberikan pengalaman audio yang mulus di ekosistem Apple. M4A sering kali
+          lebih efisien daripada format MP3 pada tingkat kompresi yang sama.</p>
+        <a href="audio populer/jungle-vibes-153242.m4a" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/sci-fi-mystery-153789.aiff" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.aiff" type="audio/mp3" />
         </audio>
         <span>8. AIFF</span>
-        <p>Format audio yang digunakan untuk kualitas suara tertinggi, seperti WAV.</p>
-        <a href="audio populer/sci-fi-mystery-153789.aiff" download class="download-link">⬇ Download</a>
+        <p>AIFF adalah format audio tanpa kompresi yang serupa dengan WAV, yang
+          menyediakan kualitas suara tinggi. Karena tidak menggunakan kompresi, AIFF
+          menghasilkan file audio dengan ukuran besar namun sangat cocok untuk rekaman
+          studio profesional dan pengolahan audio yang memerlukan kualitas terbaik.
+          Format ini banyak digunakan dalam industri musik dan film untuk produksi suara
+          dan efek audio. AIFF menawarkan fleksibilitas dengan mendukung metadata,
+          memungkinkan penyimpanan informasi seperti nama lagu dan gambar album.
+          Meskipun ukurannya besar, AIFF tetap populer di kalangan profesional audio.</p>
+        <a href="audio populer/jungle-vibes-153242.aiff" download class="download-link">⬇ Download</a>
       </div>
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" type="audio/mp3" />
+          <source src="audio populer/Evano.com_jungle-vibes-153242.mid" type="audio/midi" />
+          Your browser does not support MIDI playback directly.
         </audio>
-        <span>9. ALAC</span>
-        <p>Format lossless audio yang dikembangkan oleh Apple untuk kualitas tinggi.</p>
-        <a href="audio populer/over50-first-test-210923-230921-16-v3-uplifting-22sec-with-guitar-piano-9000.wma" download class="download-link">⬇ Download</a>
-      </div>
+        <span>9. MIDI</span>
+        <p>MIDI adalah format file audio yang berfungsi sebagai protokol komunikasi digital antara alat musik 
+          elektronik dan komputer. Tidak seperti format audio lainnya yang merekam gelombang suara, file MIDI hanya
+           berisi instruksi digital—seperti nada, durasi, dan instrumen apa yang dimainkan—yang kemudian diterjemahkan
+            menjadi suara oleh perangkat lunak atau perangkat keras. Karena tidak menyimpan data audio asli, ukuran file 
+            MIDI sangat kecil, membuatnya ideal untuk komposisi musik, ringtone, atau aplikasi dengan keterbatasan ruang
+             penyimpanan. Meskipun kualitas suara MIDI bergantung pada perangkat yang memainkannya, format ini tetap 
+             populer di kalangan musisi, produser, dan pembuat game karena fleksibilitasnya dalam pengeditan dan 
+             produksi musik.</p>
+        <a href="audio populer/Evano.com_jungle-vibes-153242.mid" download class="download-link">⬇ Download</a>
+      </div>      
 
       <div class="audio-box">
         <audio controls>
-          <source src="audio populer/vintage-transport-4-loop-2-253563.opus" type="audio/mp3" />
+          <source src="audio populer/jungle-vibes-153242.opus" type="audio/mp3" />
         </audio>
         <span>10. Opus</span>
-        <p>Format audio yang cocok untuk aplikasi streaming dan komunikasi suara.</p>
-        <a href="audio populer/vintage-transport-4-loop-2-253563.opus" download class="download-link">⬇ Download</a>
+        <p>Opus adalah format audio yang dirancang khusus untuk aplikasi komunikasi suara dan streaming 
+          dengan latensi rendah. Format ini sangat fleksibel, memungkinkan penyesuaian kualitas suara 
+          berdasarkan kebutuhan jaringan dan bit rate. Opus digunakan dalam aplikasi seperti VoIP, video 
+          conferencing, dan layanan streaming karena kemampuannya untuk memberikan kualitas suara yang 
+          tinggi bahkan dalam kondisi bandwidth terbatas. Opus mampu beradaptasi dengan berbagai jenis audio, 
+          baik itu musik atau percakapan manusia, dan sangat efisien dalam menghasilkan suara dengan kualitas 
+          yang baik pada bit rate rendah. Format ini digunakan oleh aplikasi seperti Skype dan Discord karena 
+          kemampuannya mengoptimalkan suara dalam jaringan yang sibuk.</p>
+        <a href="audio populer/jungle-vibes-153242.opus" download class="download-link">⬇ Download</a>
       </div>
 
     </div>

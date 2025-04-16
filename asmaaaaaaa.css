@@ -958,6 +958,18 @@ footer .contact-form button.filled-button:hover {
   z-index: 10;
 }
 
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .conta {
+    height: 150px;
+  }
+
+  .overlay-img {
+    height: 80px;
+  }
+}
+
 .request-form {
   background: none;
   position: relative;

@@ -95,9 +95,9 @@
     }
   
     .card-desc {
-      font-weight: 300;
+      font-weight: 500;
       color: #3d3d3d;
-      font-size: 0.95em;
+      font-size: 1.2em;
     }
   
     footer {
@@ -129,7 +129,7 @@
   <!-- Navbar start -->
   <nav class="navbar">
     <a href="#" class="navbar-logo">El-<span>asma</span></a>
-    <a href="asmaaa.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
+    <a href="index.html" class="back-link" style="text-decoration: none; color: var(--accent-pink); font-weight: 600; font-size: 16px;">
         ← Back
       </a>
     </nav>
@@ -150,7 +150,17 @@
       </a>
       <div class="card-content">
         <div class="card-title">1. JPG </div>
-        <div class="card-desc">Format gambar kompresi tinggi, cocok untuk foto digital.</div>
+        <div class="card-desc">JPG adalah ekstensi file gambar yang sangat umum digunakan pada berbagai
+          perangkat dan platform digital. JPG sebenarnya merupakan versi singkat dari
+          JPEG, dibuat karena keterbatasan sistem operasi lama seperti MS-DOS yang
+          hanya mendukung tiga huruf ekstensi file. Meskipun secara teknis tidak berbeda
+          dari JPEG, JPG menjadi lebih populer karena lebih ringkas dan tetap dikenali oleh
+          sebagian besar perangkat lunak pengolah gambar. Format JPG menggunakan
+          kompresi lossy, yang artinya sebagian data gambar dihilangkan untuk
+          memperkecil ukuran file, meskipun ini bisa menyebabkan sedikit penurunan
+          kualitas. JPG sangat cocok digunakan untuk gambar seperti foto pemandangan,
+          potret, atau media sosial karena mendukung warna hingga 24-bit (16 juta warna).
+          </div>
       </div>
     </div>
 
@@ -160,29 +170,51 @@
       </a>
       <div class="card-content">
         <div class="card-title">2. PNG</div>
-        <div class="card-desc">Format gambar tanpa latar belakang dan kualitas tinggi.</div>
+        <div class="card-desc">PNG adalah format gambar yang mendukung transparansi latar belakang dan
+          kualitas tinggi tanpa kehilangan data (lossless). Format ini sangat ideal untuk
+          16
+          ikon, logo, dan gambar web yang memerlukan latar belakang transparan. PNG
+          mempertahankan detail asli gambar meskipun ukuran file-nya lebih besar
+          dibanding JPG. Kelebihan lainnya adalah kemampuannya untuk menampilkan
+          teks dan garis dengan sangat tajam. PNG mendukung berbagai tingkat
+          transparansi (alpha channel), menjadikannya pilihan utama untuk web desain
+          modern.</div>
       </div>
     </div>
 
     <div class="card">
-      <a href="gambar populer/3.gif" download>
-        <img src="gambar populer/3.gif">
+      <a href="gambar populer/3.ico" download>
+        <img src="gambar populer/3.ico">
       </a>
       <div class="card-content">
-        <div class="card-title">3. GIF</div>
-        <div class="card-desc">Format animasi gambar yang mendukung transparansi.</div>
+        <div class="card-title">3. ICO</div>
+        <div class="card-desc">ICO adalah format gambar yang digunakan khusus untuk ikon di sistem operasi Windows. 
+          Format ini mampu menyimpan beberapa ukuran ikon dalam satu file, sehingga dapat menyesuaikan tampilan sesuai
+           resolusi layar. ICO mendukung transparansi dan biasanya digunakan dalam aplikasi dan shortcut desktop. 
+           Ukuran file biasanya kecil karena resolusi ikon yang terbatas, meskipun bisa berisi gambar resolusi tinggi. 
+           Meskipun jarang digunakan di luar konteks ikon, ICO tetap penting dalam pengembangan antarmuka pengguna.</div>
       </div>
-    </div>
+    </div>    
 
     <div class="card">
-      <a href="gambar populer/10.jpeg" download>
-        <img src="gambar populer/10.jpeg">
+      <a href="gambar populer/1.heif" download>
+        <img src="gambar populer/1.heif">
       </a>
       <div class="card-content">
-        <div class="card-title">4. JPEG</div>
-        <div class="card-desc">Format gambar kompresi tinggi, cocok untuk foto digital</div>
+        <div class="card-title">4. HEIF</div>
+        <div class="card-desc">HEIF adalah format gambar modern yang dirancang untuk menyimpan gambar
+          berkualitas tinggi dengan ukuran file yang jauh lebih kecil dibandingkan JPEG.
+          Format ini menggunakan teknologi kompresi yang sama seperti video HEVC
+          (High Efficiency Video Coding), sehingga efisien dalam penggunaan ruang
+          penyimpanan. HEIF mendukung fitur-fitur canggih seperti transparansi, animasi,
+          serta metadata tambahan seperti kedalaman gambar atau informasi burst shot.
+          HEIF telah digunakan secara luas di perangkat Apple seperti iPhone dan iPad,
+          serta mulai mendapatkan dukungan di Android dan browser modern. Meskipun
+          belum seuniversal JPEG, HEIF menjanjikan efisiensi tinggi dengan tetap
+          mempertahankan kualitas visual.
+          </div>
       </div>
-    </div>
+    </div>    
 
     <div class="card">
       <a href="gambar populer/5.svg" download>
@@ -190,7 +222,13 @@
       </a>
       <div class="card-content">
         <div class="card-title">5. SVG</div>
-        <div class="card-desc">Format gambar vektor berbasis XML, cocok untuk web.</div>
+        <div class="card-desc">SVG adalah format gambar vektor berbasis XML yang bisa diskalakan tanpa
+          kehilangan kualitas. SVG sangat cocok untuk ikon, logo, dan ilustrasi web yang
+          harus tampil tajam di semua resolusi layar. Karena berbasis vektor, file SVG
+          biasanya sangat kecil dan dapat diubah langsung melalui kode. SVG juga
+          mendukung animasi dan interaktivitas dengan bantuan JavaScript dan CSS.
+          Format ini merupakan standar untuk grafis web modern.
+          </div>
       </div>
     </div>
 
@@ -201,49 +239,84 @@
       </a>
       <div class="card-content">
         <div class="card-title">6. WebP</div>
-        <div class="card-desc">Format modern dengan ukuran kecil dan kualitas tinggi.</div>
+        <div class="card-desc">WebP adalah format gambar modern dari Google yang menawarkan ukuran file
+          lebih kecil dengan kualitas tetap tinggi. WebP mendukung kompresi lossy dan
+          lossless, serta transparansi dan animasi seperti gabungan dari JPG, PNG, dan GIF.
+          Format ini sangat ideal untuk website karena mampu mempercepat waktu muat
+          halaman. Banyak browser modern seperti Chrome dan Firefox sudah mendukung
+          WebP. Dengan efisiensi tinggi, WebP perlahan menggantikan format lama dalam
+          penggunaan web.</div>
       </div>
     </div>
 
     <div class="card">
-      <a href="gambar populer/9.avif" download>
-        <img src="gambar populer/9.avif">
+      <a href="gambar populer/7.avif" download>
+        <img src="gambar populer/7.avif">
       </a>
       <div class="card-content">
         <div class="card-title">7. AVIF</div>
-        <div class="card-desc">Format gambar modern dengan kompresi efisien dan kualitas tinggi, ideal untuk web.</div>
+        <div class="card-desc">AVIF adalah format gambar modern yang dirancang untuk memberikan kualitas
+          tinggi dengan ukuran file yang sangat kecil. Format ini menggunakan kompresi
+          berbasis codec AV1, yang dikenal sangat efisien dan mendukung kompresi lossy
+          maupun lossless. AVIF mendukung transparansi, warna HDR, dan kedalaman
+          warna tinggi, menjadikannya pesaing kuat untuk format seperti JPEG, PNG, dan
+          WebP. AVIF sangat cocok digunakan di web karena ukurannya lebih kecil
+          dibanding format lain dengan kualitas serupa, sehingga membantu mempercepat
+          waktu muat halaman. Namun, meskipun dukungan untuk AVIF semakin luas di
+          browser modern, beberapa perangkat lama mungkin belum sepenuhnya
+          kompatibel.
+          </div>
       </div>
     </div>
 
     <div class="card">
-      <a href="gambar populer/4.heif" download>
-        <img src="gambar populer/4.heif">
+      <a href="audio/8.bmp" download>
+        <img src="audio/8.bmp" alt="Gambar format BMP">
       </a>
       <div class="card-content">
-        <div class="card-title">8. HEIF</div>
-        <div class="card-desc">Format efisien dengan kualitas tinggi, ideal untuk perangkat modern dan hemat ruang penyimpanan.</div>
+        <div class="card-title">8. BMP</div>
+        <div class="card-desc">BMP (Bitmap) adalah format gambar yang dikembangkan oleh Microsoft dan digunakan secara 
+          luas di sistem operasi Windows. Format ini menyimpan gambar tanpa kompresi atau dengan kompresi ringan, 
+          sehingga menghasilkan kualitas gambar yang sangat tinggi. Namun, ukuran file BMP cenderung besar karena 
+          tidak mengutamakan efisiensi penyimpanan. BMP tidak secara langsung mendukung transparansi, meskipun bisa 
+          dimodifikasi agar mendukungnya. Karena ukuran filenya yang besar, format ini tidak ideal untuk penggunaan web 
+          tetapi tetap digunakan untuk tujuan pengolahan gambar mentah.</div>
       </div>
-    </div>    
+    </div>        
 
     <div class="card">
-      <a href="gambar populer/7.jp2" download>
-        <img src="gambar populer/7.jp2">
+      <a href="gambar populer/1.raw" download>
+      <img src="gambar populer/1.raw">
       </a>
       <div class="card-content">
-        <div class="card-title">9. JP2</div>
-        <div class="card-desc">Format gambar JPEG 2000 dengan kompresi efisien dan kualitas tinggi, mendukung transparansi.</div>
+      <div class="card-title">9. RAW</div>
+      <div class="card-desc">RAW adalah format gambar mentah yang dihasilkan langsung dari sensor kamera digital tanpa 
+        banyak pemrosesan. Format ini menyimpan semua data gambar asli, memungkinkan fotografer melakukan penyuntingan 
+        dengan fleksibilitas tinggi. Karena tidak dikompresi atau hanya dikompresi lossless, ukuran file RAW sangat 
+        besar. Format ini tidak standar tunggal—setiap merek kamera bisa memiliki ekstensi RAW sendiri, seperti .CR2 
+        (Canon) atau .NEF (Nikon). RAW tidak digunakan untuk tampilan langsung di web, tetapi sangat penting dalam dunia
+         fotografi profesional.</div>
       </div>
-    </div>
+      </div>      
 
-    <div class="card">
-      <a href="gambar populer/8.heic" download>
-        <img src="gambar populer/8.heic">
-      </a>
-      <div class="card-content">
-        <div class="card-title">10. HEIC</div>
-        <div class="card-desc">Format dari Apple dengan efisiensi kompresi tinggi.</div>
+      <div class="card">
+        <a href="gambar populer/1.heic" download>
+          <img src="gambar populer/1.heic">
+        </a>
+        <div class="card-content">
+          <div class="card-title">10. HEIC</div>
+          <div class="card-desc">HEIC adalah format gambar yang dikembangkan oleh Apple dan digunakan
+            sebagai standar default di iPhone untuk menyimpan foto. HEIC menggunakan
+            kompresi yang sangat efisien, memungkinkan gambar berkualitas tinggi dengan
+            ukuran file yang kecil. Format ini mendukung transparansi, animasi, serta
+            metadata lengkap. Meski sangat canggih, HEIC belum sepenuhnya kompatibel di
+            semua sistem operasi dan browser. Namun, popularitasnya terus meningkat
+            seiring penggunaan iOS.
+            </div>
+        </div>
       </div>
-    </div>
+      
+        
   </div>
 
   <footer>
